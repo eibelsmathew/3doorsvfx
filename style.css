@@ -54,10 +54,6 @@
   }
   
   @media (max-width: 768px) {
-    .site-logo {
-      width: 100px;
-      height: 70px;
-    }
   
     .site-heading {
       font-size: 2rem;
@@ -179,13 +175,13 @@
   /* WhatsApp Button */
   .whatsapp-float {
     position: fixed;
-    bottom: 50px;
-    right: 170px;
+    bottom: 0px;
+    right: 25px;;
     background-color: #25D366;
     color: white;
     border-radius: 50%;
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     font-size: 35px;
     z-index: 20;
     display: flex;
@@ -195,6 +191,12 @@
     transition: transform 0.3s ease;
     text-decoration: none;
   }
+  .whatsapp-float {
+    bottom: 
+    right: 
+    width: 
+    height: 55px;
+}
   
   .whatsapp-float:hover {
     transform: scale(1.1);
@@ -202,14 +204,15 @@
   
   .logo-near-whatsapp {
     position: fixed;
-    bottom: 10px; /* adjust as needed to move logo above WhatsApp button */
-    right: 25px;
-    width: 150px;
-    height: 150px;
+    bottom: 30px;
+    right: 75px;
+    width: 200px;
+    height: 153px;
     object-fit: contain;
     z-index: 20;
     animation: floatIn 0.5s ease-in-out;
-  }
+    opacity:50%;
+}
   
   @keyframes floatIn {
     from {
@@ -224,12 +227,13 @@
   
   @media (max-width: 768px) {
     .logo-near-whatsapp {
-      width: 100px;
+      width: 150px;
       height: 100px;
       bottom: 5px;
-      right: 0px;
-    }
+      right: -27px;
+      opacity: 50%;
   }
+}
   .whatsapp-float {
     bottom: 90px;
     right: 25px;
