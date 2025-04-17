@@ -40,14 +40,14 @@
   }
   
   .site-logo {
-    width: 100px;
+    width: 150px;
     height: 100px;
     object-fit: contain;
   }
   
   .site-heading {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.2rem;
+    font-size: 3rem;
     color: white;
     font-weight: 700;
     margin: 0;
@@ -55,12 +55,12 @@
   
   @media (max-width: 768px) {
     .site-logo {
-      width: 50px;
-      height: 50px;
+      width: 100px;
+      height: 70px;
     }
   
     .site-heading {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   
     .site-header {
@@ -179,14 +179,14 @@
   /* WhatsApp Button */
   .whatsapp-float {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 170px;
     background-color: #25D366;
     color: white;
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    font-size: 24px;
+    width: 65px;
+    height: 65px;
+    font-size: 35px;
     z-index: 20;
     display: flex;
     align-items: center;
@@ -200,3 +200,39 @@
     transform: scale(1.1);
   }
   
+  .logo-near-whatsapp {
+    position: fixed;
+    bottom: 10px; /* adjust as needed to move logo above WhatsApp button */
+    right: 25px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    z-index: 20;
+    animation: floatIn 0.5s ease-in-out;
+  }
+  
+  @keyframes floatIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-near-whatsapp {
+      width: 100px;
+      height: 100px;
+      bottom: 5px;
+      right: 0px;
+    }
+  }
+  .whatsapp-float {
+    bottom: 90px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+  }
